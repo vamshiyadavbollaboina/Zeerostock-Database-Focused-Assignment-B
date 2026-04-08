@@ -1,0 +1,89 @@
+/* --- Inventory Form Card --- */
+.inventory-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.inventory-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Subtle accent line for the header */
+.inventory-card h2::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+/* --- Form Layout --- */
+.inventory-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* --- Inputs --- */
+.inventory-card input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  transition: all 0.2s ease-in-out;
+}
+
+.inventory-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Placeholder styling */
+.inventory-card input::placeholder {
+  color: #94a3b8;
+}
+
+/* --- Submit Button --- */
+.inventory-card button {
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1e293b; /* Sleek dark button to contrast supplier form */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.inventory-card button:hover {
+  background-color: #0f172a;
+}
+
+.inventory-card button:active {
+  transform: scale(0.98);
+}
+
+.inventory-card input[type="number"]::-webkit-inner-spin-button,
+.inventory-card input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inventory-card input[type="number"] {
+  -moz-appearance: textfield;
+}
