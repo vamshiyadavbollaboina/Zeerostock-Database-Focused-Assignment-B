@@ -8,10 +8,10 @@ const inventoryRoutes = require('./routes/inventoryRoutes');
 
 const app = express();
 
-app.use(cors({
-    origin: process.env.CORS_ORIGIN || '*', 
-    methods: ['GET', 'POST']
-}));
+// app.use(cors({
+//     origin: process.env.CORS_ORIGIN || '*', 
+//     methods: ['GET', 'POST']
+// }));
 app.use(express.json());
 
 app.use('/supplier', supplierRoutes);
