@@ -6,7 +6,7 @@ import InventoryForm from "./components/InventoryForm";
 import InventorySummary from "./components/InventorySummary";
 import "./App.css";
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_BASE = https://zeerostock-database-focused-assignment-b1.onrender.com || "http://localhost:5000";
 
 function App() {
   const [summary, setSummary] = useState([]);
