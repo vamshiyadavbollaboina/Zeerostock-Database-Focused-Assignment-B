@@ -1,22 +1,22 @@
 # README: Part B – Inventory Database + APIs
 
-## 🚀 Project Overview
+## Project Overview
 This project focuses on the backend architecture and data integrity of the **Zeerostock** inventory system. It manages the relationship between suppliers and their surplus stock, ensuring that all data is validated and searchable through high-performance queries.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Backend:** Node.js, Express.js
 * **Database:** SQLite (Relational)
 * **API Testing:** Postman / cURL
 
-## 📋 Features
+## Features
 * **Relational Mapping:** Links inventory items to specific, verified suppliers.
 * **Strict Validation:** Prevents negative stock quantities or invalid pricing (Price must be $> 0$).
 * **Business Intelligence Query:** An optimized endpoint that calculates the total monetary value of stock held by each supplier.
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 1.  **Clone the Repository:**
     ```bash
-    git clone <your-repo-link>
+    git clone https://github.com/vamshiyadavbollaboina/Zeerostock-Database-Focused-Assignment-B.git
     cd inventory-database-project
     ```
 2.  **Install Dependencies:**
@@ -34,7 +34,7 @@ This project focuses on the backend architecture and data integrity of the **Zee
 
 ---
 
-## 📊 Database Schema Explanation
+## Database Schema Explanation
 The data model is built on a **One-to-Many** relationship: one supplier can list multiple inventory items, but each item belongs to exactly one supplier.
 
 * **Suppliers Table:** Contains `id` (Primary Key), `name`, and `city`.
@@ -42,7 +42,7 @@ The data model is built on a **One-to-Many** relationship: one supplier can list
 
 
 
-## ❓ Design Choice: SQL vs. NoSQL
+## Design Choice: SQL vs. NoSQL
 I chose **SQL (Relational)** for this assignment. In an inventory system, data consistency is critical. SQL allows us to enforce **Referential Integrity**—for example, the database will physically prevent adding an inventory item if the `supplier_id` does not exist. Additionally, the requirement to group and aggregate data (Sum of $Quantity \times Price$) is a native strength of SQL's relational engine.
 
 ## ⚡ Indexing & Optimization
