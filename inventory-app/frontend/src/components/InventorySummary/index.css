@@ -1,4 +1,3 @@
-/* --- Summary Card Styling --- */
 .summary-card {
   background: #ffffff;
   padding: 24px;
@@ -18,16 +17,14 @@
   gap: 10px;
 }
 
-/* Accent for the Summary header */
 .summary-card h2::before {
   content: "";
   width: 4px;
   height: 20px;
-  background-color: #059669; /* Green accent to represent 'value' */
+  background-color: #059669; 
   border-radius: 2px;
 }
 
-/* --- Table Specifics --- */
 .summary-card .inventory-table {
   width: 100%;
   border-collapse: collapse;
@@ -50,39 +47,34 @@
   vertical-align: middle;
 }
 
-/* ID column styling */
 .summary-card td:first-child {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   color: #64748b;
 }
 
-/* Supplier Name */
 .summary-card td:nth-child(2) {
   font-weight: 600;
   color: #0f172a;
 }
 
-/* Products Column - Italicize list */
 .summary-card td:nth-child(3) {
   color: #475569;
   font-style: italic;
   font-size: 0.9rem;
 }
 
-/* Total Value Column - Highlighted Green */
 .summary-card td:last-child {
   font-weight: 800;
   color: #059669;
   font-size: 1.1rem;
-  text-align: right; /* Align money to the right */
+  text-align: right;
 }
 
 .summary-card th:last-child {
   text-align: right;
 }
 
-/* --- Loader & Empty State --- */
 .summary-card .loader {
   padding: 40px;
   text-align: center;
@@ -96,7 +88,6 @@
   padding: 30px;
 }
 
-/* Hover effect for rows */
 .summary-card tbody tr:hover {
   background-color: #fcfdfe;
   transition: background-color 0.2s ease;
